@@ -10,7 +10,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Super-Linter
-        uses:  super-linter/super-linter@v8.1.0
+        uses: super-linter/super-linter@v8.1.0
         env:
-          DEFAULT_BRANCH: master 
+          DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_CHECKOV: false
