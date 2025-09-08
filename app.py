@@ -1,5 +1,9 @@
-def say_hello(name):
-    print("Hello, " + name)
+"""Simple script that prints a greeting message."""
+
+def say_hello(name: str) -> None:
+    """Print a greeting message for the given name."""
+    print(f"Hello, {name}")
 
 
-say_hello("World")
+if __name__ == "__main__":
+    say_hello("World")
